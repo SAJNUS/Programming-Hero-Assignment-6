@@ -4,8 +4,8 @@ import bannerImage from '../../assets/icons/banner.png'
 
 function Hero() {
   return (
-    <section className="min-h-screen bg-base-100">
-      <div className="container mx-auto flex min-h-screen items-center px-6 py-16">
+    <section className="min-h-[85vh] bg-base-100">
+      <div className="container mx-auto flex min-h-[85vh] items-center px-6 py-16">
         <div className="grid items-center gap-10 md:grid-cols-2">
           <div className="space-y-6">
             <div className="badge badge-outline border-primary/40 bg-primary/10 px-4 py-3 text-sm font-semibold text-primary">
