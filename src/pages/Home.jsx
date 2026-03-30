@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { toast } from 'react-toastify'
 import Cart from '../components/Cart'
+import CTA from '../components/CTA'
+import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import Navbar from '../components/Navbar'
 import Pricing from '../components/Pricing'
@@ -62,6 +64,8 @@ function Home() {
 
       <Steps />
       <Pricing />
+      <CTA />
+      <Footer />
     </div>
   )
 }
