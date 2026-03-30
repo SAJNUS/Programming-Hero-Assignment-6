@@ -29,8 +29,6 @@ function Home() {
       <Navbar />
       <Hero />
       <Stats />
-      <Steps />
-      <Pricing />
 
       <section className="bg-base-100 py-16 md:py-24">
         <div className="container mx-auto px-6">
@@ -61,6 +59,9 @@ function Home() {
           </div>
         </div>
       </section>
+
+      <Steps />
+      <Pricing />
     </div>
   )
 }
