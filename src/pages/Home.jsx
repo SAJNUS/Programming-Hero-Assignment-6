@@ -3,8 +3,10 @@ import { toast } from 'react-toastify'
 import Cart from '../components/Cart'
 import Hero from '../components/Hero'
 import Navbar from '../components/Navbar'
+import Pricing from '../components/Pricing'
 import Products from '../components/Products'
 import Stats from '../components/Stats'
+import Steps from '../components/Steps'
 
 function Home() {
   const [activeTab, setActiveTab] = useState('products')
@@ -27,6 +29,8 @@ function Home() {
       <Navbar />
       <Hero />
       <Stats />
+      <Steps />
+      <Pricing />
 
       <section className="bg-base-100 py-16 md:py-24">
         <div className="container mx-auto px-6">
