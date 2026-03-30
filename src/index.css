@@ -1,9 +1,2 @@
 @import "tailwindcss";
 @plugin "daisyui";
-
-@theme {
-  --color-primary: #7c3aed;
-  --color-primary-light: #a78bfa;
-  --color-primary-dark: #5b21b6;
-  --gradient-primary: linear-gradient(135deg, #7c3aed, #a78bfa);
-}
