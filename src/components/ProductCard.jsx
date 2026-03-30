@@ -4,7 +4,7 @@ const badgeStyles = {
   'best seller': 'badge badge-warning badge-soft',
 }
 
-function ProductCard({ product, iconSrc }) {
+function ProductCard({ product, iconSrc, addToCart }) {
   const tagClass = badgeStyles[product.tagType] || 'badge badge-neutral badge-soft'
   const periodLabel = product.period === 'monthly' ? '/Mo' : '/One-Time'
 
@@ -36,7 +36,9 @@ function ProductCard({ product, iconSrc }) {
           ))}
         </ul>
 
-        <button className="btn btn-primary mt-6 w-full rounded-full normal-case text-white">Buy Now</button>
+        <button className="btn btn-primary mt-6 w-full rounded-full normal-case text-white" onClick={() => addToCart(product)}>
+          Buy Now
+        </button>
       </div>
     </article>
   )
