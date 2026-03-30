@@ -1,4 +1,4 @@
-import packageIcon from '../../assets/icons/package.png'
+import badgeLogo from '../../assets/icons/Group 5.png'
 import playIcon from '../../assets/icons/Play.png'
 import bannerImage from '../../assets/icons/banner.png'
 
@@ -10,7 +10,7 @@ function Hero() {
           <div className="space-y-6">
             <div className="badge badge-outline border-primary/40 bg-primary/10 px-4 py-3 text-sm font-semibold text-primary">
               <span className="flex items-center gap-2">
-                <img src={packageIcon} alt="New" className="h-4 w-4" />
+                <img src={badgeLogo} alt="New" className="h-4 w-4" />
                 <span>New: AI-Powered Tools Available</span>
               </span>
             </div>
