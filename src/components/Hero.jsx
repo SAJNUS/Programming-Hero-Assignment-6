@@ -1,14 +1,18 @@
+import packageIcon from '../../assets/icons/package.png'
 import playIcon from '../../assets/icons/Play.png'
 import bannerImage from '../../assets/icons/banner.png'
 
 function Hero() {
   return (
-    <section className="bg-base-100">
-      <div className="container mx-auto px-6 py-16">
+    <section className="min-h-screen bg-base-100">
+      <div className="container mx-auto flex min-h-screen items-center px-6 py-16">
         <div className="grid items-center gap-10 md:grid-cols-2">
           <div className="space-y-6">
             <div className="badge badge-outline border-primary/40 bg-primary/10 px-4 py-3 text-sm font-semibold text-primary">
-              New: AI-Powered Tools Available
+              <span className="flex items-center gap-2">
+                <img src={packageIcon} alt="New" className="h-4 w-4" />
+                <span>New: AI-Powered Tools Available</span>
+              </span>
             </div>
 
             <h1 className="text-4xl font-bold leading-tight text-base-content md:text-6xl">
