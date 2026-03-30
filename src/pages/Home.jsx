@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { toast } from 'react-toastify'
 import Cart from '../components/Cart'
 import Hero from '../components/Hero'
 import Navbar from '../components/Navbar'
@@ -10,7 +11,15 @@ function Home() {
   const [cart, setCart] = useState([])
 
   const addToCart = (product) => {
+    const isDuplicate = cart.some((item) => item.id === product.id)
+    
+    if (isDuplicate) {
+      toast.info('Item already in cart', { position: 'top-right', autoClose: 3000 })
+      return
+    }
+    
     setCart((prevCart) => [...prevCart, product])
+    toast.success('Added to cart', { position: 'top-right', autoClose: 3000 })
   }
 
   return (

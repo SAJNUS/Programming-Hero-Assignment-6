@@ -1,3 +1,5 @@
+import { toast } from 'react-toastify'
+
 const assetMap = import.meta.glob('../../assets/**/*.{png,jpg,jpeg,webp,svg}', {
   eager: true,
   import: 'default',
@@ -6,12 +8,14 @@ const assetMap = import.meta.glob('../../assets/**/*.{png,jpg,jpeg,webp,svg}', {
 function Cart({ cart, setCart }) {
   const removeFromCart = (id) => {
     setCart((prevCart) => prevCart.filter((item) => item.id !== id))
+    toast.info('Removed from cart', { position: 'top-right', autoClose: 3000 })
   }
 
   const total = cart.reduce((sum, item) => sum + item.price, 0)
 
   const handleCheckout = () => {
     setCart([])
+    toast.success('Checkout successful', { position: 'top-right', autoClose: 3000 })
   }
 
   if (cart.length === 0) {
