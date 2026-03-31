@@ -116,9 +116,19 @@ function Pricing() {
 
                 <div className="mt-auto pt-8">
                   <button
-                    className="w-full rounded-full border-none bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_78%,#4f46e5_90%,#7c3aed_100%)] py-3 font-semibold text-white shadow-md transition-all duration-300 hover:scale-105 hover:brightness-110 hover:shadow-lg"
+                    className={`w-full rounded-full border-none px-6 py-2 font-semibold shadow-md transition-all duration-300 hover:scale-105 hover:brightness-110 hover:shadow-lg ${
+                      plan.highlighted
+                        ? 'bg-white'
+                        : 'bg-[linear-gradient(90deg,#4F46E5_0%,#6D28D9_50%,#9333EA_100%)] text-white'
+                    }`}
                   >
-                    {plan.button}
+                    {plan.highlighted ? (
+                      <span className="bg-[linear-gradient(90deg,#4F46E5_0%,#6D28D9_50%,#9333EA_100%)] bg-clip-text text-transparent [-webkit-text-fill-color:transparent]">
+                        {plan.button}
+                      </span>
+                    ) : (
+                      plan.button
+                    )}
                   </button>
                 </div>
               </div>

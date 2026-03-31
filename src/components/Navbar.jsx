@@ -7,7 +7,7 @@ function Navbar({ cartCount = 0 }) {
     <header className="border-b border-base-200 bg-base-100">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <button className="btn btn-ghost bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_85%,#8b5cf6_100%)] bg-clip-text px-0 text-3xl font-bold normal-case text-transparent hover:bg-transparent">
+          <button className="btn btn-ghost bg-[linear-gradient(90deg,#4F46E5_0%,#6D28D9_50%,#9333EA_100%)] bg-clip-text px-0 text-3xl font-bold normal-case text-transparent [-webkit-text-fill-color:transparent] hover:bg-transparent">
             DigiTools
           </button>
 
@@ -23,15 +23,15 @@ function Navbar({ cartCount = 0 }) {
             <button className="btn btn-ghost btn-circle relative">
               <img src={cartIcon} alt="Cart" className="h-5 w-5" />
               {cartCount > 0 && (
-                <span className="absolute -right-1 -top-1 flex h-5 min-w-5 items-center justify-center rounded-full bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_85%,#8b5cf6_100%)] px-1 text-[10px] font-bold text-white">
+                <span className="absolute -right-1 -top-1 flex h-5 min-w-5 items-center justify-center rounded-full bg-[linear-gradient(90deg,#4F46E5_0%,#6D28D9_50%,#9333EA_100%)] px-1 text-[10px] font-bold text-white">
                   {cartCount}
                 </span>
               )}
             </button>
-            <button className="btn normal-case rounded-full border-none bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_78%,#4f46e5_90%,#7c3aed_100%)] text-white shadow-md transition-all duration-300 hover:scale-105 hover:brightness-110 hover:shadow-lg">
+            <button className="bg-transparent px-0 text-base font-medium normal-case text-base-content/80 transition-colors duration-300 hover:text-primary">
               Login
             </button>
-            <button className="btn normal-case rounded-full border-none bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_78%,#4f46e5_90%,#7c3aed_100%)] text-white shadow-md transition-all duration-300 hover:scale-105 hover:brightness-110 hover:shadow-lg">
+            <button className="btn normal-case rounded-full border-none bg-[linear-gradient(90deg,#4F46E5_0%,#6D28D9_50%,#9333EA_100%)] px-6 py-2 text-white shadow-md transition-all duration-300 hover:scale-105 hover:brightness-110 hover:shadow-lg">
               Get Started
             </button>
           </div>
@@ -64,19 +64,19 @@ function Navbar({ cartCount = 0 }) {
                 <button className="btn btn-ghost btn-circle relative">
                   <img src={cartIcon} alt="Cart" className="h-5 w-5" />
                   {cartCount > 0 && (
-                    <span className="absolute -right-1 -top-1 flex h-5 min-w-5 items-center justify-center rounded-full bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_85%,#8b5cf6_100%)] px-1 text-[10px] font-bold text-white">
+                    <span className="absolute -right-1 -top-1 flex h-5 min-w-5 items-center justify-center rounded-full bg-[linear-gradient(90deg,#4F46E5_0%,#6D28D9_50%,#9333EA_100%)] px-1 text-[10px] font-bold text-white">
                       {cartCount}
                     </span>
                   )}
                 </button>
               </li>
               <li className="mt-2">
-                <button className="btn w-full justify-start normal-case rounded-full border-none bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_78%,#4f46e5_90%,#7c3aed_100%)] text-white shadow-md transition-all duration-300 hover:scale-105 hover:brightness-110 hover:shadow-lg">
+                <button className="w-full bg-transparent px-0 text-left text-base font-medium normal-case text-base-content/80 transition-colors duration-300 hover:text-primary">
                   Login
                 </button>
               </li>
               <li className="mt-1">
-                <button className="btn w-full normal-case rounded-full border-none bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_78%,#4f46e5_90%,#7c3aed_100%)] text-white shadow-md transition-all duration-300 hover:scale-105 hover:brightness-110 hover:shadow-lg">
+                <button className="btn w-full normal-case rounded-full border-none bg-[linear-gradient(90deg,#4F46E5_0%,#6D28D9_50%,#9333EA_100%)] px-6 py-2 text-white shadow-md transition-all duration-300 hover:scale-105 hover:brightness-110 hover:shadow-lg">
                   Get Started
                 </button>
               </li>

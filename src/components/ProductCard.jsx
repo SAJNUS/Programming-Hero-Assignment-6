@@ -37,7 +37,7 @@ function ProductCard({ product, iconSrc, addToCart }) {
         </ul>
 
         <button
-          className="btn mt-6 w-full rounded-full normal-case border-none bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_78%,#4f46e5_90%,#7c3aed_100%)] text-white shadow-md transition-all duration-300 hover:scale-105 hover:brightness-110 hover:shadow-lg"
+          className="btn mt-6 w-full rounded-full normal-case border-none bg-[linear-gradient(90deg,#4F46E5_0%,#6D28D9_50%,#9333EA_100%)] px-6 py-2 text-white shadow-md transition-all duration-300 hover:scale-105 hover:brightness-110 hover:shadow-lg"
           onClick={() => addToCart(product)}
         >
           Buy Now

@@ -41,7 +41,7 @@ function Steps() {
                 key={step.id}
                 className="group relative rounded-2xl border border-base-200 bg-base-100 p-8 shadow-sm transition-all duration-300 hover:shadow-md hover:shadow-primary/10"
               >
-                <div className="absolute right-5 top-5 flex h-10 w-10 items-center justify-center rounded-full bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_85%,#8b5cf6_100%)] text-sm font-bold text-white">
+                <div className="absolute right-5 top-5 flex h-10 w-10 items-center justify-center rounded-full bg-[linear-gradient(90deg,#4F46E5_0%,#6D28D9_50%,#9333EA_100%)] text-sm font-bold text-white">
                   0{step.id}
                 </div>
 

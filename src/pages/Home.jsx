@@ -42,13 +42,21 @@ function Home() {
 
             <div className="mt-7 flex items-center justify-center gap-3">
               <button
-                className={`btn normal-case rounded-full border-none bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_78%,#4f46e5_90%,#7c3aed_100%)] text-white shadow-md transition-all duration-300 hover:scale-105 hover:brightness-110 hover:shadow-lg ${activeTab === 'products' ? 'shadow-lg' : 'opacity-80'}`}
+                className={`btn normal-case rounded-full border-none transition-all duration-300 ${
+                  activeTab === 'products'
+                    ? 'bg-[linear-gradient(90deg,#4F46E5_0%,#6D28D9_50%,#9333EA_100%)] px-6 py-2 text-white shadow-md hover:scale-105 hover:brightness-110 hover:shadow-lg'
+                    : 'border border-[#6D28D9] bg-transparent px-6 py-2 text-[#6D28D9] shadow-none hover:scale-105'
+                }`}
                 onClick={() => setActiveTab('products')}
               >
                 Products
               </button>
               <button
-                className={`btn normal-case rounded-full border-none bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_78%,#4f46e5_90%,#7c3aed_100%)] text-white shadow-md transition-all duration-300 hover:scale-105 hover:brightness-110 hover:shadow-lg ${activeTab === 'cart' ? 'shadow-lg' : 'opacity-80'}`}
+                className={`btn normal-case rounded-full border-none transition-all duration-300 ${
+                  activeTab === 'cart'
+                    ? 'bg-[linear-gradient(90deg,#4F46E5_0%,#6D28D9_50%,#9333EA_100%)] px-6 py-2 text-white shadow-md hover:scale-105 hover:brightness-110 hover:shadow-lg'
+                    : 'border border-[#6D28D9] bg-transparent px-6 py-2 text-[#6D28D9] shadow-none hover:scale-105'
+                }`}
                 onClick={() => setActiveTab('cart')}
               >
                 Cart ({cart.length})

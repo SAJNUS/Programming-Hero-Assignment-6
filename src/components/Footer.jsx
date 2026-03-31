@@ -13,7 +13,7 @@ function Footer() {
       <div className="container mx-auto px-6 py-16">
         <div className="grid gap-12 md:grid-cols-5">
           <div className="md:col-span-1">
-            <h3 className="bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_85%,#8b5cf6_100%)] bg-clip-text text-2xl font-bold text-transparent">DigiTools</h3>
+            <h3 className="text-2xl font-bold text-white">DigiTools</h3>
             <p className="mt-4 text-sm leading-relaxed">
               Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.
             </p>
