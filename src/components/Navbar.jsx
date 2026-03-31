@@ -7,7 +7,7 @@ function Navbar({ cartCount = 0 }) {
     <header className="border-b border-base-200 bg-base-100">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <button className="btn btn-ghost bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text px-0 text-3xl font-bold normal-case text-transparent hover:bg-transparent">
+          <button className="btn btn-ghost bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_85%,#8b5cf6_100%)] bg-clip-text px-0 text-3xl font-bold normal-case text-transparent hover:bg-transparent">
             DigiTools
           </button>
 
@@ -24,10 +24,10 @@ function Navbar({ cartCount = 0 }) {
               <img src={cartIcon} alt="Cart" className="h-5 w-5" />
               <span>Cart ({cartCount})</span>
             </button>
-            <button className="btn normal-case rounded-full border-none bg-gradient-to-r from-purple-600 to-pink-500 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg">
+            <button className="btn normal-case rounded-full border-none bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_85%,#8b5cf6_100%)] text-white transition-all duration-300 hover:scale-105 hover:shadow-lg">
               Login
             </button>
-            <button className="btn normal-case rounded-full border-none bg-gradient-to-r from-purple-600 to-pink-500 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg">
+            <button className="btn normal-case rounded-full border-none bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_85%,#8b5cf6_100%)] text-white transition-all duration-300 hover:scale-105 hover:shadow-lg">
               Get Started
             </button>
           </div>
@@ -63,12 +63,12 @@ function Navbar({ cartCount = 0 }) {
                 </button>
               </li>
               <li className="mt-2">
-                <button className="btn w-full justify-start normal-case rounded-full border-none bg-gradient-to-r from-purple-600 to-pink-500 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                <button className="btn w-full justify-start normal-case rounded-full border-none bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_85%,#8b5cf6_100%)] text-white transition-all duration-300 hover:scale-105 hover:shadow-lg">
                   Login
                 </button>
               </li>
               <li className="mt-1">
-                <button className="btn w-full normal-case rounded-full border-none bg-gradient-to-r from-purple-600 to-pink-500 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                <button className="btn w-full normal-case rounded-full border-none bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_85%,#8b5cf6_100%)] text-white transition-all duration-300 hover:scale-105 hover:shadow-lg">
                   Get Started
                 </button>
               </li>

@@ -90,7 +90,7 @@ function Pricing() {
                 </div>
 
                 <button
-                  className="mt-8 w-full rounded-full border-none bg-gradient-to-r from-purple-600 to-pink-500 py-3 font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                  className="mt-8 w-full rounded-full border-none bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_85%,#8b5cf6_100%)] py-3 font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
                 >
                   {plan.button}
                 </button>

@@ -37,7 +37,7 @@ function ProductCard({ product, iconSrc, addToCart }) {
         </ul>
 
         <button
-          className="btn mt-6 w-full rounded-full normal-case border-none bg-gradient-to-r from-purple-600 to-pink-500 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
+          className="btn mt-6 w-full rounded-full normal-case border-none bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_85%,#8b5cf6_100%)] text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
           onClick={() => addToCart(product)}
         >
           Buy Now

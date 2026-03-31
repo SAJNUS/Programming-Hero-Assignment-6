@@ -25,11 +25,11 @@ function Hero() {
             </p>
 
             <div className="flex flex-wrap items-center gap-4">
-              <button className="btn normal-case rounded-full border-none bg-gradient-to-r from-purple-600 to-pink-500 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg">
+              <button className="btn normal-case rounded-full border-none bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_85%,#8b5cf6_100%)] text-white transition-all duration-300 hover:scale-105 hover:shadow-lg">
                 Explore Products
               </button>
 
-              <button className="btn normal-case rounded-full border-none bg-gradient-to-r from-purple-600 to-pink-500 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg">
+              <button className="btn normal-case rounded-full border-none bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_85%,#8b5cf6_100%)] text-white transition-all duration-300 hover:scale-105 hover:shadow-lg">
                 <img src={playIcon} alt="Play" className="h-4 w-4" />
                 Watch Demo
               </button>

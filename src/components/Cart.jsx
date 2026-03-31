@@ -59,7 +59,7 @@ function Cart({ cart, setCart }) {
           <span className="text-2xl font-bold text-base-content">${total}</span>
         </div>
         <button
-          className="btn w-full rounded-full normal-case border-none bg-gradient-to-r from-purple-600 to-pink-500 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
+          className="btn w-full rounded-full normal-case border-none bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_85%,#8b5cf6_100%)] text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
           onClick={handleCheckout}
         >
           Proceed To Checkout
