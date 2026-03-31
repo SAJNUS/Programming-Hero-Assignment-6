@@ -42,13 +42,13 @@ function Home() {
 
             <div className="mt-7 flex items-center justify-center gap-3">
               <button
-                className={`btn normal-case rounded-full border-none bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_85%,#8b5cf6_100%)] text-white transition-all duration-300 hover:scale-105 hover:shadow-lg ${activeTab === 'products' ? 'shadow-lg' : 'opacity-80'}`}
+                className={`btn normal-case rounded-full border-none bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_78%,#4f46e5_90%,#7c3aed_100%)] text-white shadow-md transition-all duration-300 hover:scale-105 hover:brightness-110 hover:shadow-lg ${activeTab === 'products' ? 'shadow-lg' : 'opacity-80'}`}
                 onClick={() => setActiveTab('products')}
               >
                 Products
               </button>
               <button
-                className={`btn normal-case rounded-full border-none bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_85%,#8b5cf6_100%)] text-white transition-all duration-300 hover:scale-105 hover:shadow-lg ${activeTab === 'cart' ? 'shadow-lg' : 'opacity-80'}`}
+                className={`btn normal-case rounded-full border-none bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_78%,#4f46e5_90%,#7c3aed_100%)] text-white shadow-md transition-all duration-300 hover:scale-105 hover:brightness-110 hover:shadow-lg ${activeTab === 'cart' ? 'shadow-lg' : 'opacity-80'}`}
                 onClick={() => setActiveTab('cart')}
               >
                 Cart ({cart.length})

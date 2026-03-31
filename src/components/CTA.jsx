@@ -11,10 +11,10 @@ function CTA() {
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-center">
-            <button className="rounded-full bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_85%,#8b5cf6_100%)] px-8 py-3 font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg">
+            <button className="rounded-full bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_78%,#4f46e5_90%,#7c3aed_100%)] px-8 py-3 font-semibold text-white shadow-md transition-all duration-300 hover:scale-105 hover:brightness-110 hover:shadow-lg">
               Explore Products
             </button>
-            <button className="rounded-full bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_85%,#8b5cf6_100%)] px-8 py-3 font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg">
+            <button className="rounded-full bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_78%,#4f46e5_90%,#7c3aed_100%)] px-8 py-3 font-semibold text-white shadow-md transition-all duration-300 hover:scale-105 hover:brightness-110 hover:shadow-lg">
               View Pricing
             </button>
           </div>

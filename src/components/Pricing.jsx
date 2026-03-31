@@ -80,7 +80,7 @@ function Pricing() {
 
               <div className={`p-8 ${plan.highlighted ? 'text-white' : ''}`}>
                 <h3 className="text-3xl font-bold">{plan.name}</h3>
-                <p className={`mt-2 text-sm ${plan.highlighted ? 'text-purple-100' : 'text-base-content/60'}`}>
+                <p className={`mt-1 text-sm ${plan.highlighted ? 'text-purple-100' : 'text-base-content/60'}`}>
                   {plan.description}
                 </p>
 
@@ -114,11 +114,13 @@ function Pricing() {
                   ))}
                 </ul>
 
-                <button
-                  className="mt-auto w-full rounded-full border-none bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_85%,#8b5cf6_100%)] py-3 font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
-                >
-                  {plan.button}
-                </button>
+                <div className="mt-auto pt-8">
+                  <button
+                    className="w-full rounded-full border-none bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_78%,#4f46e5_90%,#7c3aed_100%)] py-3 font-semibold text-white shadow-md transition-all duration-300 hover:scale-105 hover:brightness-110 hover:shadow-lg"
+                  >
+                    {plan.button}
+                  </button>
+                </div>
               </div>
             </div>
           ))}
