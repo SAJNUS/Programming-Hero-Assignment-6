@@ -7,7 +7,7 @@ function Navbar() {
     <header className="border-b border-base-200 bg-base-100">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <button className="btn btn-ghost px-0 text-3xl font-bold normal-case text-primary hover:bg-transparent">
+          <button className="btn btn-ghost bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text px-0 text-3xl font-bold normal-case text-transparent hover:bg-transparent">
             DigiTools
           </button>
 
@@ -23,8 +23,12 @@ function Navbar() {
             <button className="btn btn-ghost btn-circle">
               <img src={cartIcon} alt="Cart" className="h-5 w-5" />
             </button>
-            <button className="btn btn-ghost normal-case">Login</button>
-            <button className="btn btn-primary normal-case text-white">Get Started</button>
+            <button className="btn normal-case rounded-full border-none bg-gradient-to-r from-purple-600 to-pink-500 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg">
+              Login
+            </button>
+            <button className="btn normal-case rounded-full border-none bg-gradient-to-r from-purple-600 to-pink-500 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg">
+              Get Started
+            </button>
           </div>
 
           <div className="dropdown dropdown-end md:hidden">
@@ -52,10 +56,14 @@ function Navbar() {
                 </li>
               ))}
               <li className="mt-2">
-                <button className="btn btn-ghost w-full justify-start normal-case">Login</button>
+                <button className="btn w-full justify-start normal-case rounded-full border-none bg-gradient-to-r from-purple-600 to-pink-500 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                  Login
+                </button>
               </li>
               <li className="mt-1">
-                <button className="btn btn-primary w-full normal-case text-white">Get Started</button>
+                <button className="btn w-full normal-case rounded-full border-none bg-gradient-to-r from-purple-600 to-pink-500 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                  Get Started
+                </button>
               </li>
             </ul>
           </div>

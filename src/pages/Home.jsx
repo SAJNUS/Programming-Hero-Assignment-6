@@ -37,18 +37,18 @@ function Home() {
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-4xl font-bold text-base-content md:text-5xl">Premium Digital Tools</h2>
             <p className="mt-4 text-sm leading-relaxed text-base-content/60 md:text-base">
-              Choose from our curated collection of premium digital products designed to boost your productivity and creativity.
+              Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity.
             </p>
 
             <div className="mt-7 flex items-center justify-center gap-3">
               <button
-                className={`btn normal-case ${activeTab === 'products' ? 'btn-primary text-white' : 'btn-ghost'}`}
+                className={`btn normal-case rounded-full border-none bg-gradient-to-r from-purple-600 to-pink-500 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg ${activeTab === 'products' ? 'shadow-lg' : 'opacity-80'}`}
                 onClick={() => setActiveTab('products')}
               >
                 Products
               </button>
               <button
-                className={`btn normal-case ${activeTab === 'cart' ? 'btn-primary text-white' : 'btn-ghost'}`}
+                className={`btn normal-case rounded-full border-none bg-gradient-to-r from-purple-600 to-pink-500 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg ${activeTab === 'cart' ? 'shadow-lg' : 'opacity-80'}`}
                 onClick={() => setActiveTab('cart')}
               >
                 Cart ({cart.length})

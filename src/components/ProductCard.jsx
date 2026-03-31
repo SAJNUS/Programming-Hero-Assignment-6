@@ -36,7 +36,10 @@ function ProductCard({ product, iconSrc, addToCart }) {
           ))}
         </ul>
 
-        <button className="btn btn-primary mt-6 w-full rounded-full normal-case text-white" onClick={() => addToCart(product)}>
+        <button
+          className="btn mt-6 w-full rounded-full normal-case border-none bg-gradient-to-r from-purple-600 to-pink-500 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
+          onClick={() => addToCart(product)}
+        >
           Buy Now
         </button>
       </div>

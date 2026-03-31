@@ -90,11 +90,7 @@ function Pricing() {
                 </div>
 
                 <button
-                  className={`mt-8 w-full rounded-full py-3 font-semibold transition-all duration-200 ${
-                    plan.highlighted
-                      ? 'bg-white text-purple-600 hover:bg-purple-50'
-                      : 'bg-primary text-white hover:bg-purple-700'
-                  }`}
+                  className="mt-8 w-full rounded-full border-none bg-gradient-to-r from-purple-600 to-pink-500 py-3 font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
                 >
                   {plan.button}
                 </button>
