@@ -40,27 +40,29 @@ function Home() {
               Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity.
             </p>
 
-            <div className="mt-7 flex items-center justify-center gap-3">
+            <div className="mt-7 flex items-center justify-center">
+              <div className="inline-flex items-center rounded-full border border-base-200 bg-base-50 p-1 shadow-sm">
               <button
-                className={`btn normal-case rounded-full border-none transition-all duration-300 ${
+                className={`btn h-auto min-h-0 rounded-full border-none px-6 py-2 text-sm font-semibold normal-case transition-all duration-300 ${
                   activeTab === 'products'
-                    ? 'bg-[linear-gradient(90deg,#4F46E5_0%,#6D28D9_50%,#9333EA_100%)] px-6 py-2 text-white shadow-md hover:scale-105 hover:brightness-110 hover:shadow-lg'
-                    : 'border border-[#6D28D9] bg-transparent px-6 py-2 text-[#6D28D9] shadow-none hover:scale-105'
+                    ? 'bg-[linear-gradient(90deg,#4F46E5_0%,#6D28D9_50%,#9333EA_100%)] text-white shadow-md'
+                    : 'bg-transparent text-[#6D28D9] shadow-none hover:bg-base-100'
                 }`}
                 onClick={() => setActiveTab('products')}
               >
                 Products
               </button>
               <button
-                className={`btn normal-case rounded-full border-none transition-all duration-300 ${
+                className={`btn h-auto min-h-0 rounded-full border-none px-6 py-2 text-sm font-semibold normal-case transition-all duration-300 ${
                   activeTab === 'cart'
-                    ? 'bg-[linear-gradient(90deg,#4F46E5_0%,#6D28D9_50%,#9333EA_100%)] px-6 py-2 text-white shadow-md hover:scale-105 hover:brightness-110 hover:shadow-lg'
-                    : 'border border-[#6D28D9] bg-transparent px-6 py-2 text-[#6D28D9] shadow-none hover:scale-105'
+                    ? 'bg-[linear-gradient(90deg,#4F46E5_0%,#6D28D9_50%,#9333EA_100%)] text-white shadow-md'
+                    : 'bg-transparent text-[#6D28D9] shadow-none hover:bg-base-100'
                 }`}
                 onClick={() => setActiveTab('cart')}
               >
                 Cart ({cart.length})
               </button>
+              </div>
             </div>
           </div>
 

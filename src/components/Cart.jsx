@@ -21,7 +21,24 @@ function Cart({ cart, setCart }) {
   if (cart.length === 0) {
     return (
       <div className="rounded-2xl border border-base-200 bg-base-100 p-8 text-center shadow-sm">
-        <p className="text-lg font-medium text-base-content/70">No items in cart</p>
+        <div className="mx-auto mb-5 flex h-28 w-28 items-center justify-center rounded-full border border-base-200 bg-base-50">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            className="h-14 w-14 text-black opacity-60"
+            aria-hidden="true"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M2.25 3h1.386a1.5 1.5 0 0 1 1.464 1.17l.383 1.723m0 0 1.46 6.57a1.5 1.5 0 0 0 1.465 1.174h8.572a1.5 1.5 0 0 0 1.465-1.174l1.058-4.761a1.125 1.125 0 0 0-1.099-1.369H5.483m0 0L4.5 3.75M8.25 18.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm9 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+            />
+          </svg>
+        </div>
+        <p className="text-lg font-medium text-base-content/70">No items in the cart</p>
       </div>
     )
   }
