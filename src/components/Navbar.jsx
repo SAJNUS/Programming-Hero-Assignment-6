@@ -2,7 +2,7 @@ import cartIcon from '../../assets/products/shopping-cart.png'
 
 const navItems = ['Products', 'Features', 'Pricing', 'Testimonials', 'FAQ']
 
-function Navbar() {
+function Navbar({ cartCount = 0 }) {
   return (
     <header className="border-b border-base-200 bg-base-100">
       <div className="container mx-auto px-6 py-4">
@@ -20,8 +20,9 @@ function Navbar() {
           </nav>
 
           <div className="hidden items-center gap-4 md:flex">
-            <button className="btn btn-ghost btn-circle">
+            <button className="btn btn-ghost gap-2 rounded-full px-3 normal-case">
               <img src={cartIcon} alt="Cart" className="h-5 w-5" />
+              <span>Cart ({cartCount})</span>
             </button>
             <button className="btn normal-case rounded-full border-none bg-gradient-to-r from-purple-600 to-pink-500 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg">
               Login
@@ -55,6 +56,12 @@ function Navbar() {
                   </a>
                 </li>
               ))}
+              <li className="mt-1">
+                <button className="btn btn-ghost w-full justify-start normal-case">
+                  <img src={cartIcon} alt="Cart" className="h-5 w-5" />
+                  Cart ({cartCount})
+                </button>
+              </li>
               <li className="mt-2">
                 <button className="btn w-full justify-start normal-case rounded-full border-none bg-gradient-to-r from-purple-600 to-pink-500 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg">
                   Login
