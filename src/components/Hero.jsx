@@ -21,7 +21,7 @@ function Hero() {
 
             <p className="max-w-xl text-base leading-relaxed text-base-content/70 md:text-lg">
               Access premium AI tools, design assets, templates, and productivity software—all in one place. Start creating
-              faster today.
+              faster today. <br /> Explore Products
             </p>
 
             <div className="flex flex-wrap items-center gap-4">
