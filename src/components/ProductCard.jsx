@@ -12,8 +12,8 @@ function ProductCard({ product, iconSrc, addToCart }) {
     <article className="card rounded-2xl border border-base-200 bg-base-100 shadow-sm">
       <div className="card-body p-5 md:p-6">
         <div className="mb-4 flex items-start justify-between">
-          <div className="flex h-12 w-12 items-center justify-center rounded-full border border-base-200 bg-base-100">
-            <img src={iconSrc} alt={product.name} className="h-6 w-6 object-contain" />
+          <div className="flex h-14 w-14 items-center justify-center rounded-full border border-base-200 bg-base-100">
+            <img src={iconSrc} alt={product.name} className="h-8 w-8 object-contain" />
           </div>
           <span className={tagClass}>{product.tag}</span>
         </div>
