@@ -1,3 +1,5 @@
+import { FaXTwitter } from 'react-icons/fa6'
+
 function Footer() {
   const currentYear = new Date().getFullYear()
 
@@ -80,11 +82,9 @@ function Footer() {
               <a
                 href="#"
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-600 transition-all hover:border-white hover:bg-white hover:text-slate-900"
-                aria-label="Twitter"
+                aria-label="X"
               >
-                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M23.953 4.57a10 10 0 002.856-3.822c-1.03.582-2.088 1.016-3.165 1.276 1.287-1.53 2.27-3.95 2.777-6.298 0-.16 0-.32 0-.48s0-.36 0-.52c-1.012.6-2.12 1.084-3.296 1.4-1.01-1.068-2.432-1.737-3.96-1.737-2.995 0-5.427 2.43-5.427 5.427 0 .42.04.84.12 1.25A15.413 15.413 0 011.671 3.149c-.816 1.408-1.288 3.057-1.288 4.82 0 1.883.963 3.545 2.425 4.52-1.02 0-1.968-.31-2.8-.78 0 .04 0 .08 0 .12 0 2.6 1.824 4.768 4.253 5.26-.44.12-.91.186-1.397.186-.34 0-.68-.032-1.01-.095.68 2.125 2.68 3.673 5.026 3.72-1.816 1.42-4.1 2.268-6.58 2.268-.42 0-.84-.03-1.26-.093 1.866 1.2 4.08 1.888 6.464 1.888 7.757 0 11.99-6.422 11.99-11.99 0-.18 0-.36-.006-.54.822-.593 1.534-1.336 2.1-2.181z" />
-                </svg>
+                <FaXTwitter className="h-5 w-5" />
               </a>
             </div>
           </div>

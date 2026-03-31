@@ -66,7 +66,7 @@ function Pricing() {
           {plans.map((plan) => (
             <div
               key={plan.id}
-              className={`relative flex flex-col rounded-3xl border transition-all duration-300 ${
+              className={`relative flex h-full flex-col rounded-3xl border transition-all duration-300 ${
                 plan.highlighted
                   ? 'border-transparent bg-gradient-to-br from-purple-600 to-purple-700 shadow-lg shadow-purple-200'
                   : 'border-base-200 bg-white shadow-sm hover:shadow-md'
@@ -88,15 +88,9 @@ function Pricing() {
                   <span className="text-5xl font-bold">${plan.price}</span>
                   <span className={plan.highlighted ? 'text-purple-100' : 'text-base-content/60'}>{plan.period}</span>
                 </div>
-
-                <button
-                  className="mt-8 w-full rounded-full border-none bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_85%,#8b5cf6_100%)] py-3 font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
-                >
-                  {plan.button}
-                </button>
               </div>
 
-              <div className={`border-t px-8 py-8 ${plan.highlighted ? 'border-purple-500/30' : 'border-base-200'}`}>
+              <div className={`flex flex-1 flex-col border-t px-8 py-8 ${plan.highlighted ? 'border-purple-500/30' : 'border-base-200'}`}>
                 <ul className="space-y-4">
                   {plan.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start gap-3">
@@ -119,6 +113,12 @@ function Pricing() {
                     </li>
                   ))}
                 </ul>
+
+                <button
+                  className="mt-auto w-full rounded-full border-none bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_85%,#8b5cf6_100%)] py-3 font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                >
+                  {plan.button}
+                </button>
               </div>
             </div>
           ))}
