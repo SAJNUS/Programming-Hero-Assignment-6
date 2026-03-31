@@ -20,9 +20,13 @@ function Navbar({ cartCount = 0 }) {
           </nav>
 
           <div className="hidden items-center gap-4 md:flex">
-            <button className="btn btn-ghost gap-2 rounded-full px-3 normal-case">
+            <button className="btn btn-ghost btn-circle relative">
               <img src={cartIcon} alt="Cart" className="h-5 w-5" />
-              <span>Cart ({cartCount})</span>
+              {cartCount > 0 && (
+                <span className="absolute -right-1 -top-1 flex h-5 min-w-5 items-center justify-center rounded-full bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_85%,#8b5cf6_100%)] px-1 text-[10px] font-bold text-white">
+                  {cartCount}
+                </span>
+              )}
             </button>
             <button className="btn normal-case rounded-full border-none bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_85%,#8b5cf6_100%)] text-white transition-all duration-300 hover:scale-105 hover:shadow-lg">
               Login
@@ -57,9 +61,13 @@ function Navbar({ cartCount = 0 }) {
                 </li>
               ))}
               <li className="mt-1">
-                <button className="btn btn-ghost w-full justify-start normal-case">
+                <button className="btn btn-ghost btn-circle relative">
                   <img src={cartIcon} alt="Cart" className="h-5 w-5" />
-                  Cart ({cartCount})
+                  {cartCount > 0 && (
+                    <span className="absolute -right-1 -top-1 flex h-5 min-w-5 items-center justify-center rounded-full bg-[linear-gradient(to_right,#2563eb_0%,#2563eb_85%,#8b5cf6_100%)] px-1 text-[10px] font-bold text-white">
+                      {cartCount}
+                    </span>
+                  )}
                 </button>
               </li>
               <li className="mt-2">
