@@ -90,7 +90,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-700 py-8">
+        <div className="mt-12 border-t border-gray-700 pt-10 pb-8">
           <div className="flex flex-col items-center justify-between gap-4 text-sm md:flex-row">
             <p>© {currentYear} Digitools. All rights reserved.</p>
             <div className="flex gap-6">

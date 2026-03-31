@@ -41,13 +41,12 @@ function Steps() {
                 key={step.id}
                 className="group relative rounded-2xl border border-base-200 bg-base-100 p-8 shadow-sm transition-all duration-300 hover:shadow-md hover:shadow-primary/10"
               >
-                <div className="absolute -top-4 right-8 flex h-10 w-10 items-center justify-center rounded-full bg-primary text-center font-bold text-white">
-                  0{step.id}
-                </div>
-
                 <div className="flex justify-center">
-                  <div className="flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-purple-100 to-blue-100">
+                  <div className="relative flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-purple-100 to-blue-100">
                     <img src={iconSrc} alt={step.title} className="h-12 w-12" />
+                    <div className="absolute right-0 top-0 flex h-8 w-8 -translate-y-1/4 translate-x-1/4 items-center justify-center rounded-full bg-gradient-to-r from-purple-600 to-pink-500 text-xs font-bold text-white">
+                      0{step.id}
+                    </div>
                   </div>
                 </div>
 
