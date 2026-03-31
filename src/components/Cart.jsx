@@ -8,7 +8,7 @@ const assetMap = import.meta.glob('../../assets/**/*.{png,jpg,jpeg,webp,svg}', {
 function Cart({ cart, setCart }) {
   const removeFromCart = (id) => {
     setCart((prevCart) => prevCart.filter((item) => item.id !== id))
-    toast.info('Removed from cart', { position: 'top-right', autoClose: 3000 })
+    toast.error('Removed from cart', { position: 'top-right', autoClose: 3000, icon: '❌' })
   }
 
   const total = cart.reduce((sum, item) => sum + item.price, 0)

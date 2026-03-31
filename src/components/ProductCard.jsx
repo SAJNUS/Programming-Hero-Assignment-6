@@ -4,7 +4,7 @@ const badgeStyles = {
   'best seller': 'badge badge-warning badge-soft',
 }
 
-function ProductCard({ product, iconSrc, addToCart }) {
+function ProductCard({ product, iconSrc, addToCart, isInCart }) {
   const tagClass = badgeStyles[product.tagType] || 'badge badge-neutral badge-soft'
   const periodLabel = product.period === 'monthly' ? '/Mo' : '/One-Time'
 
@@ -37,10 +37,14 @@ function ProductCard({ product, iconSrc, addToCart }) {
         </ul>
 
         <button
-          className="btn mt-6 w-full rounded-full normal-case border-none bg-[linear-gradient(90deg,#4F46E5_0%,#6D28D9_50%,#9333EA_100%)] px-6 py-2 text-white shadow-md transition-all duration-300 hover:scale-105 hover:brightness-110 hover:shadow-lg"
+          className={`btn mt-6 w-full rounded-full normal-case border-none px-6 py-2 text-white shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg ${
+            isInCart
+              ? 'bg-emerald-500 hover:bg-emerald-600 hover:brightness-100'
+              : 'bg-[linear-gradient(90deg,#4F46E5_0%,#6D28D9_50%,#9333EA_100%)] hover:brightness-110'
+          }`}
           onClick={() => addToCart(product)}
         >
-          Buy Now
+          {isInCart ? 'Added to cart' : 'Buy Now'}
         </button>
       </div>
     </article>

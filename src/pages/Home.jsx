@@ -65,7 +65,11 @@ function Home() {
           </div>
 
           <div className="mt-12">
-            {activeTab === 'products' ? <Products addToCart={addToCart} /> : <Cart cart={cart} setCart={setCart} />}
+            {activeTab === 'products' ? (
+              <Products addToCart={addToCart} cart={cart} />
+            ) : (
+              <Cart cart={cart} setCart={setCart} />
+            )}
           </div>
         </div>
       </section>
